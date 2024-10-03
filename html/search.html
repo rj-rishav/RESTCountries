@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <title>RESTCountries</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h1>RESTCountries <span><sub>API</sub></span></h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="https://github.com/rj-rishav" target="_blank">Contact</a></li>
+                <li><a href="https://restcountries.com/?ref=blog.tericcabrel.com#about-this-project" target="_blank">About</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main class="min-h">
+        <section id="glass-morph">
+            <section id="search-section">
+                <input type="text" name="search" id="search" placeholder="Search...">
+                <button id="search-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="black" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg></button>
+              <select name="Options" id="options">
+                <option value="country">Country</option>
+                <option value="capital">Capital</option>
+              </select>
+            </section>
+            <div id="result">
+                <div id="data-display">
+                    <p>Country: <span></span></p>
+                    <p>Capital: <span></span></p>
+                    <p>Continent: <span></span></p>
+                    <p>Area: <span></span></p>
+                    <p>Currency: <span></span></p>
+                    <p>Offical Languages: <span></span></p>
+                    <p>Borders: <span></span></p>
+                </div>
+                <div>
+                    <img id="flag" src="" alt="">
+                </div>
+            </div>
+        </section>
+   </main>
+   <script src="../js/api.js"></script>
+</body>
+</html>
